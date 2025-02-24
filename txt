@@ -1,0 +1,16 @@
+Email address
+NIN number
+Contact number 
+Full name 
+Address 
+State 
+Source of income 
+Product interested in
+Period of purchase 
+ID card Picture 
+Bank statement 
+Utility bill 
+Name of Guarantor
+Contact number Guarantor 
+Guarantor ID
+Applicant recent picture

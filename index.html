@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Create Account</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo filemtime('css/style.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="css/forms.css?v=<?php echo filemtime('css/form.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="css/login.css?v=<?php echo filemtime('css/login.css'); ?>" />
+        <link rel="stylesheet" type="text/css" href="css/animation/animate.css" />
+
+        <!--    /////////////////////////////////-->
+        <!--    /////////////////////////////////-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--    fontawesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--    Bootstrapicons cdn-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+        <!-- AJAX LIBs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--    //////////////////////////-->
+    </head>
+
+
+<body>
+    <div class="access-section">
+        <div class="logo">
+            <a href="index.html">
+                <h2>Reddie</h2>
+            </a>
+        </div>
+
+        <div class="access-holder">
+            <div class="first-page">
+                <h2>Welcome!</h2>
+                <span class="text">We offer Quality and Durable Solar enery</span>
+                   <div class="icons">
+                       <i class="fa fa-map-maker"></i>
+                   </div>
+                <div class="action-btn">
+                    
+                    <span class="log">Sign in</span>
+                    <span class="sign">Create an account</span>
+                </div>
+                <p>Or sign in with</p>
+                <div class="social-icon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                </div>
+
+            </div>
+            <!--                //////////////////////////////////-->
+            <!--                //////////////////////////////////-->
+
+            <div class=form-control>
+                <h2 class="form-title"></h2>
+                <span class="error-msg"></span>
+                <div class="bar"></div>
+
+                <form style="display: none" method="post" action="" class="create">
+                    <div class="input-control">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" name="fullname">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="number">Contact number</label>
+                        <input type="number" name="contact">
+                        <i class="fa fa-phone"></i>
+                    </div>
+
+                    <div class="input-control">
+                        <label type="fullname">Resident State</label>
+                        <select name="state">
+                            <option value="" selected disabled>select your state</option>
+                            <option value=""> Abia</option>
+                            <option value="">Adamawa</option>
+                            <option value="">Akwa-ibom</option>
+                            <option value="">Bauchi</option>
+                        </select>
+                    </div>
+                    <div class="input-control">
+                        <label for="address">House Address</label>
+                        <input type="text" name="address">
+                        <i class="fa fa-house"></i>
+                    </div>
+                    <!--                    ////////////////////////-->
+                    <!--                    ////////////////////////-->
+                    <h2>Create an Account</h2>
+                    <span class="text">Step 2 of 3 Document</span>
+                    <div class="bar"></div>
+                    <div class="input-control">
+                        <label for="number">NIN</label>
+                        <input type="number" name="nin">
+                        <i class="fa fa-ticket"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="id-card">ID card Picture</label>
+                        <input type="file" name="id">
+                    </div>
+                    <div class="input-control">
+                        <label for="number">Source of income</label>
+                        <input type="number" name="income">
+                        <i class="fa fa-ticket"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="file">Bank statement</label>
+                        <input type="file" name="income">
+                        <i class="fa fa-ticket"></i>
+                    </div>
+
+
+                    <div class="input-control">
+                        <label for="utility bills">Utility bill </label>
+                        <input type="file" name="income">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <!--                    ////////////////////////-->
+                    <!--                    ////////////////////////-->
+
+
+                    <h2>Create an Account</h2>
+                    <span class="text">Step 3 of 4 product interested in</span>
+                    <div class="bar"></div>
+
+                    <div class="input-control">
+                        <label for="products_interest">Product interested in </label>
+                        <select name="state">
+                            <option value="" selected disabled>select your state</option>
+                        </select>
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="products_interest">Period of purchase </label>
+                        <select name="state">
+                            <option value="" selected disabled>select your state</option>
+                        </select>
+                        <i class="fa fa-book"></i>
+                    </div>
+
+                    <!--                    ////////////////////////-->
+                    <!--                    ////////////////////////-->
+                    <h2>Create an Account</h2>
+                    <span class="text">Step 4 of 4 Guarantor Information</span>
+                    <div class="bar"></div>
+                    <div class="input-control">
+                        <label for="text">Name of Guarantor</label>
+                        <input type="number" name="guarantorName">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="number">Contact number Guarantor</label>
+                        <input type="number" name="guarantorPhone">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="ID">Guarantor ID</label>
+                        <input type="file" name="guarantorID">
+                        <i class="fa fa-ticket"></i>
+                    </div>
+                    <div class="input-control">
+                        <label for="picture">Applicant recent picture</label>
+                        <input type="file" name="guarantorID">
+                        <i class="fa fa-ticket"></i>
+                    </div>
+
+                </form>
+                
+                  <form style="display: none" method="post" action="#" class="forgot">
+
+                    <div class="input-control">
+                        <input type="email" name="Email" value="" placeholder="Enter Email" required>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                    <button>Remind me</button>
+
+                    <p class="text">Back to <span class="signbtn back-to-log">Login</span></p>
+
+                </form>
+                
+                 <form style="display: none" method="post" action="#" class="login">
+                    <div class="input-control">
+                         <label for="email">Email</label>
+                        <input type="email" name="Email" value="" placeholder="Enter Email" required>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" value="" placeholder="Enter Password" required>
+                        <i class="fa fa-key"></i>
+                       
+                    </div>
+
+                    <button>Sign in</button>
+                    
+                     <span class="remind">Forgot password?</span>
+                        <span class="sign-btn sign">Create an account</span>
+                    <hr>
+                   <p>Or sign in with</p>
+                <div class="social-icon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                </div>
+
+                </form>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(".sign").on('click', function() {
+            $(".log").css({
+                "background": "rgba(0, 0, 0, 0)"
+            })
+
+            $(".sign").css({
+                "background-image": "linear-gradient(45deg, rgba(2, 211, 249, 0.9), rgb(0, 245, 188))"
+            })
+
+            $("'first-page").fadeOut(0);
+
+            $(".form-title").html("Create an account");
+
+            $(".error-msg").html("Step 1 of 3 Personal information");
+
+            $("error-msg").css({
+                "color": "#21bbe0";
+            });
+            $(".create").fadeIn(0);
+
+            $(".login").fadeOut(0);
+
+            $(".forgot").fadeOut(0);
+        });
+        
+        
+        $(".log").on('click', function(){
+            
+            $(".sign").css({
+                "background":"rgba(0,0,0,0)";
+            })
+            $(".log").css({
+                "background-image":"linear-gradient(45deg, rgba(2,211,249,0.9), rgba(0,245,188))"
+            })
+            
+            $(".first-page").fadeOut(0);
+            $(".logo").fadeIn(0);
+        
+        
+            $(".form-title").html("Sign in");
+            
+            $(".login").fadeIn(0);
+            
+            $(".create").fadeOut(0);
+            
+            $(".forgot").fadeOut(0);
+            
+        });
+    </script>
+
+</body></html>
+
+
+
+
+<!--
+Email address
+NIN number
+Contact number 
+Full name 
+Address 
+State 
+Source of income 
+Product interested in
+Period of purchase 
+ID card Picture 
+Bank statement 
+Utility bill 
+Name of Guarantor
+Contact number Guarantor 
+Guarantor ID
+Applicant recent picture-->

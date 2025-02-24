@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.access-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background: #fff;
+    padding-top: 20px;
+}
+
+.access-section .logo {
+    position: relative;
+    width: fit-content;
+    height: 45px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.access-section .logo a {
+    position: relative;
+    width: fit-content;
+    color: #21bbe0;
+}
+
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+
+.access-section .access-holder {
+    position: absolute;
+    max-width: 450px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.09);
+
+}
+
+.access-section .access-holder .first-page h2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: -0.8px;
+    /*    margin-bottom: 10px;*/
+}
+
+.access-section .access-holder .first-page .text {
+    position: relative;
+    text-align: center;
+    margin: 5px auto;
+    display: block;
+    color: #21bbe0;
+    font-size: 13px;
+    width: 90%;
+    margin-bottom: 10px
+}
+
+.access-section .access-holder .first-page .intro-img {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    /*    margin-left: 30px;*/
+
+}
+
+.access-section .access-holder .first-page .action-btn {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.access-section .access-holder .first-page .action-btn span {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    margin: 6px auto;
+    background: #21bbe0;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.access-section .access-holder .first-page .action-btn span:last-child {
+    position: relative;
+    background: transparent;
+    border: 2px solid #21bbe0;
+    color: #21bbe0;
+}
+
+.access-section .access-holder p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-weight: bold;
+}
+
+.access-section .access-holder .social-icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    /*    gap:3px;*/
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px
+}
+
+.access-section .access-holder .social-icon img {
+    position: relative;
+    bottom: 4px;
+    width: 27px;
+    height: 27px;
+    margin: 20px 10px;
+}
+
+/*///////////////////////////////////////*/
+/*///////////////////////////////////////*/
+/*form*/
+.access-section .access-holder .form-control {
+    position: relative;
+    width: 100%;
+    max-width: 450%;
+    /*    background: yellow;*/
+    margin: 0 auto;
+
+}
+ .access-section .access-holder .form-control .progress-bar{
+    position: relative;
+     width:100%;
+     height: auto;
+     display: flex;
+     margin: 40px 0;
+}
+ .access-section .access-holder .form-control .progress-bar .progress{
+    position: absolute;
+     width:0%;
+     height:4px;
+     left: 0;
+     top: 50%;
+     background: blue;
+     transition: width 0.3s ease-in-out;
+}
+.access-section .access-holder .form-control .progress-bar .step{
+    position: relative;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    color:#fff;
+    border-radius: 50%;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    background-color:  #21bbe0;
+    
+}
+
+.access-section .access-holder .form-control form {
+    position: relative;
+    width: 350px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.access-section .access-holder .form-control form .input-control {
+    position: relative;
+    width: 100%;
+}
+
+.access-section .access-holder .form-control form .input-control label {
+    position: relative;
+    width: 100%;
+    /*    background: white;*/
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.access-section .access-holder .form-control form .input-control input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #21bbe0;
+
+}
+
+.form-control form .input-control i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 40px 20px;
+    color: #21bbe0;
+}
+
+
+
+.form-control form button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #21bbe0;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.form-control form span {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline
+}
