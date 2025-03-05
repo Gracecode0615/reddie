@@ -36,17 +36,21 @@
 
 <body>
     <div class="access-section">
-        <div class="logo">
-            <a href="index.html">
-                <h2>SOLAR ENERGY</h2>
-            </a>
-        </div>
+
 
         <div class="access-holder">
-            <div class="first-page">
-                <h2>GO SOLAR AND SAVE 20% ON YOUR ELECTRIC BILL</h2>
-                <span class="text">We offer Quality and Durable Solar energyand make it easy as possible taling care of the design, permiiting, installation, monitoring,rebates and financing</span>
-                <!--
+            <div class="solar-img"></div>
+            <div class="display-form">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>SOLAR ENERGY</h2>
+                    </a>
+                </div>
+                <div class="holder">
+                    <div class="first-page">
+                        <h2>GO SOLAR AND SAVE 20% ON YOUR ELECTRIC BILL</h2>
+                        <span class="text">We offer Quality and Durable Solar energyand make it easy as possible taling care of the design, permiiting, installation, monitoring,rebates and financing</span>
+                        <!--
                 <div class="icons">
                     <i class="fa fa-map-marker-alt"></i>
                     <i class="fa fa-map-marker-alt"></i>
@@ -54,273 +58,266 @@
                     <i class="fa fa-map-marker-alt"></i>   
                 </div>
 -->
-                <div class="action-btn">
+                        <div class="action-btn">
 
-                    <span class="log">Sign in</span>
-                    <span class="sign">Create an account</span>
+                            <span class="log">Sign in</span>
+                            <span class="sign">Create an account</span>
+                        </div>
+                        <p>Or sign in with</p>
+                        <div class="social-icon">
+                            <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                            <img src="https://img.icons8.com/?size=96&id=118497&format=png">
+                            <img src="https://img.icons8.com/?size=96&id=ho8QlOYvMuG3&format=png">
+                        </div>
+
+                    </div>
+                    <!--                //////////////////////////////////-->
+                    <!--                //////////////////////////////////-->
+
+                    <div class=form-control>
+                        <h2 class="form-title"></h2>
+                        <span class="error-msg"></span>
+
+
+
+
+                        <form style="display: none" method="post" action="" class="create">
+                            <div class="progress-bar">
+                                <!--                        <div class="progress" id="progress"></div>-->
+                                <div class="step">
+                                    <p>Name</p>
+                                    <div class="bullet">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="check fas fa-check"></div>
+                                </div>
+
+                                <div class="step">
+                                    <p>Document</p>
+                                    <div class="bullet">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="check fas fa-check"></div>
+                                </div>
+
+                                <div class="step">
+                                    <p>Products </p>
+                                    <div class="bullet">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="check fas fa-check"></div>
+                                </div>
+
+                                <div class="step">
+                                    <p>Guarantor</p>
+                                    <div class="bullet">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="check fas fa-check"></div>
+                                </div>
+
+                                <div class="step">
+                                    <p>Submit</p>
+                                    <div class="bullet">
+                                        <span>5</span>
+                                    </div>
+                                    <div class="check fas fa-check"></div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <!--                   /////////////////////////////////-->
+                            <!--                   /////////////////////////////////-->
+                            <div class="page slide-page">
+                                <h4 class="page-text">Step 1: Personal information</h4>
+
+                                <div class="input-control">
+                                    <label for="fullname">Fullname</label>
+                                    <input type="text" name="fullname" required>
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="input-control">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" required>
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="input-control">
+                                    <label for="number">Contact number</label>
+                                    <input type="number" name="contact" required>
+                                </div>
+
+                                <div class="input-control">
+                                    <label type="state">Resident State</label>
+                                    <select name="state">
+                                        <option value="" selected disabled>select your state</option>
+                                        <option value=""> Abia</option>
+                                        <option value="">Adamawa</option>
+                                        <option value="">Akwa-ibom</option>
+                                        <option value="">Bauchi</option>
+                                    </select>
+                                </div>
+                                <div class="input-control">
+                                    <label for="address">House Address</label>
+                                    <input type="text" name="address" required>
+                                    <i class="fa fa-house"></i>
+                                </div>
+
+                                <div class=btns>
+                                    <span class="firstNext next next-btn">Next</span>
+                                </div>
+                            </div>
+
+                            <!--                    ////////////////////////-->
+                            <!--                    ////////////////////////-->
+                            <div class="page">
+                                <h4 class="page-text">Step 2: Document</h4>
+                                <div class="input-control">
+                                    <label for="number">NIN</label>
+                                    <input type="number" name="nin" required>
+                                </div>
+                                <div class="input-control">
+                                    <label for="id-card">ID card Picture</label>
+                                    <input type="file" name="id" required>
+                                </div>
+                                <div class="input-control">
+                                    <label for="number">Source of income</label>
+                                    <input type="number" name="income" required>
+                                </div>
+                                <div class="input-control">
+                                    <label for="file">Bank statement</label>
+                                    <input type="file" name="statement" required>
+
+
+                                    <div class="input-control">
+                                        <label for="utility bills">Utility bill </label>
+                                        <input type="file" name="bills" required>
+                                    </div>
+                                    <div class=btns>
+                                        <span class="progress-btn prev-1 prev prev-btn">Previous</span>
+                                        <span class="progress-btn next-1 next next-btn">Next</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--                    ////////////////////////-->
+                            <!--                    ////////////////////////-->
+
+                            <div class="page">
+                                <h4 class="page-text">Step 3: Products info</h4>
+                                <div class="input-control">
+                                    <label for="products_interest">Product interested in </label>
+                                    <select name="product">
+                                        <option value="" selected disabled>select product </option>
+                                    </select>
+                                </div>
+                                <div class="input-control">
+                                    <label for="products_interest">Period of purchase </label>
+                                    <select name="period">
+                                        <option value="" selected disabled>select your duration</option>
+                                    </select>
+                                </div>
+                                <div class=btns>
+                                    <span class="prev-2 prev prev-btn">Previous</span>
+                                    <span class="next-2 next next-btn">Next</span>
+                                </div>
+                            </div>
+
+
+
+                            <!--                    ////////////////////////-->
+                            <!--                    ////////////////////////-->
+                            <div class="page">
+                                <h4 class="page-text">Step 4: Garantor Information</h4>
+                                <div class="input-control">
+                                    <label for="text">Name of Guarantor</label>
+                                    <input type="text" name="guarantorName" required>
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <div class="input-control">
+                                    <label for="number">Contact number Guarantor</label>
+                                    <input type="number" name="guarantorPhone" required>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="input-control">
+                                    <label for="ID">Guarantor ID</label>
+                                    <input type="file" name="guarantorID" required>
+                                </div>
+                                <div class="input-control">
+                                    <label for="picture">Applicant recent picture</label>
+                                    <input type="file" name="guarantorID" required>
+                                </div>
+                                <div class=btns>
+                                    <span class="prev-3 prev-btn">Previous</span>
+                                    <span class="next-3 next-btn next">Next</span>
+                                </div>
+                            </div>
+
+
+                            <div class="page">
+                                <h4>Agree with the terms and conditions</h4>
+                                <p class="agree"><input type="checkbox" required>
+                                    By clicking 'Register', you agree to our Terms of Service and Privacy Policy, confirming that you have read and understood the guidelines regarding your account usage, including providing accurate information, maintaining the confidentiality of your login details, and complying with all applicable laws and regulations related to your interactions on our platform.!
+                                </p>
+                                <div class=btns>
+                                    <button class="submit" type="submit">Submit</button>
+                                </div>
+                                <p class="text back-to-log">Back to Login</p>
+                            </div>
+
+                        </form>
+                        <!--    ///////////////////////////////////////////-->
+                        <!--    ///////////////////////////////////////////-->
+                        <form style="display: none" method="post" action="#" class="forgot">
+
+                            <div class="input-control">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" value="" placeholder="Enter Email" required>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <button>Remind me</button>
+
+                            <p class="text back-to-log">Back to Login</p>
+
+
+                        </form>
+
+                        <form style="display:none" method="post" action="#" class="login">
+                            <div class="input-control">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" value="" placeholder="Enter Email" required>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+
+                            <div class="input-control">
+                                <label for="password">Password</label>
+                                <input type="password" name="Password" value="" placeholder="Enter Password" required>
+                                <i class="fa fa-key"></i>
+
+                            </div>
+
+                            <button>Sign in</button>
+
+                            <span class="remind btn-nav">Forgot password?</span>
+                            <span class="sign-btn sign btn-nav">Don't have an account?</span>
+                            <hr>
+                            <p>Or sign in with</p>
+                            <div class="social-icon">
+                                <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
+                                <img src="https://img.icons8.com/?size=96&id=118497&format=png">
+                                <img src="https://img.icons8.com/?size=96&id=ho8QlOYvMuG3&format=png">
+                            </div>
+
+
+                        </form>
+
+
+                    </div>
                 </div>
-                <p>Or sign in with</p>
-                <div class="social-icon">
-                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
-                    <img src="https://img.icons8.com/?size=96&id=118497&format=png">
-                    <img src="https://img.icons8.com/?size=96&id=ho8QlOYvMuG3&format=png">
-                </div>
-
-            </div>
-            <!--                //////////////////////////////////-->
-            <!--                //////////////////////////////////-->
-
-            <div class=form-control>
-                <h2 class="form-title"></h2>
-                <span class="error-msg"></span>
-
-
-
-
-                <form style="display: none" method="post" action="" class="create">
-                    <div class="progress-bar">
-                        <!--                        <div class="progress" id="progress"></div>-->
-                        <div class="step">
-                            <p>name</p>
-                            <div class="bullet">
-                                <span>1</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-
-                        <div class="step">
-                            <p>contact</p>
-                            <div class="bullet">
-                                <span>2</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-
-                        <div class="step">
-                            <p>Address</p>
-                            <div class="bullet">
-                                <span>3</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-
-                        <div class="step">
-                            <p>Guarantor</p>
-                            <div class="bullet">
-                                <span>4</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-                        </div>
-
-                        <div class="step">
-                            <p>Submit</p>
-                            <div class="bullet">
-                                <span>5</span>
-                            </div>
-                            <div class="check fas fa-check"></div>
-
-                        </div>
-
-
-
-                    </div>
-
-                    <!--                   /////////////////////////////////-->
-                    <!--                   /////////////////////////////////-->
-                    <div class="page slide-page">
-                        <h4 class="page-text">Step 1: Personal information</h4>
-
-                        <div class="input-control">
-                            <label for="fullname">Fullname</label>
-                            <input type="text" name="fullname" required>
-                            <i class="fa fa-user"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" required>
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="number">Contact number</label>
-                            <input type="number" name="contact" required>
-                            <i class="fa fa-phone"></i>
-                        </div>
-
-                        <div class="input-control">
-                            <label type="state">Resident State</label>
-                            <select name="state" required>
-                                <option value="" selected disabled>select your state</option>
-                                <option value=""> Abia</option>
-                                <option value="">Adamawa</option>
-                                <option value="">Akwa-ibom</option>
-                                <option value="">Bauchi</option>
-                            </select>
-                        </div>
-                        <div class="input-control">
-                            <label for="address">House Address</label>
-                            <input type="text" name="address" required>
-                            <i class="fa fa-house"></i>
-                        </div>
-
-                        <div class=btns>
-                            <span class="firstNext next next-btn">Next</span>
-                        </div>
-                    </div>
-
-                    <!--                    ////////////////////////-->
-                    <!--                    ////////////////////////-->
-                    <div class="page">
-                        <h4 class="page-text">Step 2:Document</h4>
-                        <div class="input-control">
-                            <label for="number">NIN</label>
-                            <input type="number" name="nin" required>
-                            <i class="fa fa-ticket"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="id-card">ID card Picture</label>
-                            <input type="file" name="id" required>
-                        </div>
-                        <div class="input-control">
-                            <label for="number">Source of income</label>
-                            <input type="number" name="income" required>
-                            <i class="fa fa-ticket"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="file">Bank statement</label>
-                            <input type="file" name="statement" required>
-                            <i class="fa fa-ticket"></i>
-                        </div>
-
-
-                        <div class="input-control">
-                            <label for="utility bills">Utility bill </label>
-                            <input type="file" name="bills" required>
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class=btns>
-                            <span class="prev-1 prev prev-btn">Previous</span>
-                            <span class="next-1 next next-btn">Next</span>
-                        </div>
-
-                    </div>
-
-                    <!--                    ////////////////////////-->
-                    <!--                    ////////////////////////-->
-
-                    <div class="page">
-                        <h4 class="page-text">Step 3: Products info</h4>
-                        <div class="input-control">
-                            <label for="products_interest">Product interested in </label>
-                            <select name="product" required>
-                                <option value="" selected disabled>select product </option>
-                            </select>
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="products_interest">Period of purchase </label>
-                            <select name="period" required>
-                                <option value="" selected disabled>select your duration</option>
-                            </select>
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class=btns>
-                            <span class="prev-2 prev prev-btn">Previous</span>
-                            <span class="next-2 next next-btn">Next</span>
-                        </div>
-                    </div>
-
-
-
-                    <!--                    ////////////////////////-->
-                    <!--                    ////////////////////////-->
-                    <div class="page">
-                        <h4 class="page-text">Step 4: Garantor Information</h4>
-                        <div class="input-control">
-                            <label for="text">Name of Guarantor</label>
-                            <input type="text" name="guarantorName" required>
-                            <i class="fa fa-user"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="number">Contact number Guarantor</label>
-                            <input type="number" name="guarantorPhone" required>
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="ID">Guarantor ID</label>
-                            <input type="file" name="guarantorID" required>
-                            <i class="fa fa-ticket"></i>
-                        </div>
-                        <div class="input-control">
-                            <label for="picture">Applicant recent picture</label>
-                            <input type="file" name="guarantorID" required>
-                            <i class="fa fa-ticket"></i>
-                        </div>
-                        <div class=btns>
-                            <span class="prev-3 prev-btn">Previous</span>
-                            <span class="next-3 next-btn next">Next</span>
-                        </div>
-                    </div>
-
-
-                    <div class="page">
-                        <h4>Agree with the terms and conditions</h4>
-                        <p class="agree"><input type="checkbox" required>
-                            By clicking 'Register', you agree to our Terms of Service and Privacy Policy, confirming that you have read and understood the guidelines regarding your account usage, including providing accurate information, maintaining the confidentiality of your login details, and complying with all applicable laws and regulations related to your interactions on our platform.!
-                        </p>
-                        <div class=btns>
-                            <button class="submit" type="submit">Submit</button>
-                        </div>
-                        <p class="text back-to-log">Back to Login</p>
-                    </div>
-
-                </form>
-                <!--    ///////////////////////////////////////////-->
-                <!--    ///////////////////////////////////////////-->
-                <form style="display: none" method="post" action="#" class="forgot">
-
-                    <div class="input-control">
-                        <label for="email">Email</label>
-                        <input type="email" name="Email" value="" placeholder="Enter Email" required>
-                        <i class="fa fa-envelope"></i>
-                    </div>
-
-                    <button>Remind me</button>
-
-                    <p class="text back-to-log">Back to Login</p>
-
-
-                </form>
-
-                <form style="display:none" method="post" action="#" class="login">
-                    <div class="input-control">
-                        <label for="email">Email</label>
-                        <input type="email" name="Email" value="" placeholder="Enter Email" required>
-                        <i class="fa fa-envelope"></i>
-                    </div>
-
-                    <div class="input-control">
-                        <label for="password">Password</label>
-                        <input type="password" name="Password" value="" placeholder="Enter Password" required>
-                        <i class="fa fa-key"></i>
-
-                    </div>
-
-                    <button>Sign in</button>
-
-                    <span class="remind">Forgot password?</span>
-                    <span class="sign-btn sign">Create an account</span>
-                    <hr>
-                    <p>Or sign in with</p>
-                <div class="social-icon">
-                    <img src="https://static.vecteezy.com/system/resources/previews/022/613/027/non_2x/google-icon-logo-symbol-free-png.png">
-                    <img src="https://img.icons8.com/?size=96&id=118497&format=png">
-                    <img src="https://img.icons8.com/?size=96&id=ho8QlOYvMuG3&format=png">
-                </div>
-
-
-                </form>
-
-
             </div>
         </div>
     </div>
@@ -369,95 +366,6 @@
             })
         })
     </script>
-
-
-    <!--
-    <script>
-        $(document).ready(function() {
-            // Show Sign-Up Multi-Step Form
-            $(".sign").on("click", function() {
-                $(".form-title").html("Create an Account");
-                $(".error-msg").html("Step 1:Personal information")
-                $(".error-msg").css({
-                    "color": "blue";
-                });
-
-                $(".first-page").fadeOut(0);
-                $(".create").fadeIn(0);
-                $(".login").fadeOut(0);
-                $(".login").fadeOut(0);
-            });
-
-            // Show Login Form
-            $(".log").on("click", function() {
-                $(".form-title").html("Sign In");
-                $(".error-msg").html("it's nice to see you back!")
-                $(".error-msg").css({
-                    "color": "blue";
-                });
-                $(".first-page").fadeOut(0);
-                $(".login").fadeIn(0);
-                $(".create").fadeOut(0);
-                $(".forgot").fadeOut(0);
-            });
-
-            // Show Forgot Password Form
-            $(".forgot").on("click", function() {
-                $(".form-title").html("Sign In");
-                $(".error-msg").html("it's nice to see you back!")
-                $(".error-msg").css({
-                    "color": "blue";
-                });
-                $(".login").fadeOut(0);
-                $(".forgot").fadeIn(0);
-                $(".create").fadeOut(0);
-            });
-
-            // Back to Login (from Sign Up or Forgot Password)
-            $(".back-to-login").on("click", function(e) {
-                e.preventDefault();
-                $(".create, .forgot").fadeOut(300);
-                $(".login").fadeIn(300);
-            });
-            $(".remind").on('click', function() {
-                $(".form-title").html("forgot password");
-                $(".error-msg").html("please enter a registered email")
-                $(".error-msg").css({
-                    "color": "blue";
-                });
-                $(".login").fadeOut(0);
-                $(".create").fadeOut(0);
-                $(".forgot").fadeIn(0);
-            })
-
-            // Handle Multi-Step Sign-Up Form
-            let step = 1;
-
-            $(".next-1").on("click", function() {
-                $(".step-" + step).fadeOut(300, function() {
-                    step++;
-                    $(".step-" + step).fadeIn(300);
-                    $(".error-msg").html("Step " + step + " of 3");
-                });
-            });
-
-            $(".prev1").on("click", function() {
-                $(".step-" + step).fadeOut(300, function() {
-                    step--;
-                    $(".step-" + step).fadeIn(300);
-                    $(".error-msg").html("Step " + step + " of 3");
-                });
-            });
-
-            $(".submit-signup").on("click", function() {
-                alert("Sign-Up Completed!");
-                $(".create").fadeOut(300);
-                $(".login").fadeIn(300);
-            });
-        });
-    </script>
--->
-
 </body></html>
 
 

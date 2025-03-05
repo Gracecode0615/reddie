@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     var pages = document.querySelectorAll(".page");
-    var nextButtons = document.querySelectorAll(".next-btn");
-    var prevButtons = document.querySelectorAll(".prev-btn");
+    var nextBtns = document.querySelectorAll(".next-btn");
+    var prevBtns = document.querySelectorAll(".prev-btn");
+    var nextBtnFirst = document.querySelector(".firstNext");
+    var prevBtnSec = document.querySelector(".prev-1");
+    var nextBtnSec = document.querySelector(".next-1");
+    var prevBtnThird = document.querySelector(".prev-2");
+    var nextBtnThird = document.querySelector(".next-2");
+    var prevBtnFourth = document.querySelector(".prev-3");
+    var nextBtnFourth = document.querySelector(".next-3");
     var submitBtn = document.querySelector(".submit");
     var progressText = document.querySelectorAll(".step p");
     var progressCheck = document.querySelectorAll(".step .check");
-    var bullet = document.querySelectorAll(".bullet");
+    var bullets = document.querySelectorAll(".bullet");
     var current = 0;
 
     function showPage(index) {
@@ -15,52 +22,51 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     showPage(current);
 
-    function updateProgress(forward = true) {
+      function updateProgress(forward = true) {
         if (forward) {
-            bullet[current]?.classList.add("active");
+            bullets[current]?.classList.add("active");
             progressCheck[current]?.classList.add("active");
             progressText[current]?.classList.add("active");
         } else {
-            bullet[current]?.classList.remove("active");
+            bullets[current]?.classList.remove("active");
             progressCheck[current]?.classList.remove("active");
             progressText[current]?.classList.remove("active");
         }
     }
 
-    function validatePage() {
-        var inputs = pages[current].querySelectorAll("input, select, textarea");
-        var isValid = true;
+    function validatePage(index = current) {
+        let inputs = pages[index].querySelectorAll("input[required], select[required]");
+        let valid = true;
 
-        inputs.forEach(input => {
-            let label = document.querySelector(`label[for='${input.id}']`);
-            if (!label) return; // Skip if no label is found
+        inputs.forEach((input) => {
+            let label = input.closest("label") || input.parentNode.querySelector("label");
+            if (!label) return;
 
-            let existingAsterisk = label.querySelector(".error-symbol");
-            if (!existingAsterisk) {
-                existingAsterisk = document.createElement("span");
-                existingAsterisk.classList.add("error-symbol");
-                existingAsterisk.style.color = "red";
-                existingAsterisk.style.marginLeft = "5px";
-                existingAsterisk.style.fontSize = "18px";
-                label.appendChild(existingAsterisk);
+            let errorSpan = label.querySelector(".error-message");
+            if (!errorSpan) {
+                errorSpan = document.createElement("span");
+                errorSpan.classList.add("error-message");
+                errorSpan.style.color = "red";
+                errorSpan.style.fontSize = "12px";
+                errorSpan.style.marginLeft = "5px";
+                label.appendChild(errorSpan);
             }
 
-            if (input.tagName === "SELECT" && input.value === "") {
-                existingAsterisk.textContent = " *";  // Show asterisk for required selects
-                isValid = false;
-            } else if (input.value.trim() === "") {
-                existingAsterisk.textContent = " *";  // Show asterisk for empty fields
-                isValid = false;
+            if (!input.value.trim() || input.value === "default") {
+                errorSpan.textContent = " * Required";
+                valid = false;
             } else {
-                existingAsterisk.textContent = "";  // Remove asterisk if input is valid
+                errorSpan.textContent = "";
             }
         });
 
-        return isValid;
+        return valid;
     }
 
+
     function moveNext() {
-        if (validatePage()) {
+        if (!validatePage()) return;
+        if (current < pages.length - 1) {
             updateProgress();
             current++;
             showPage(current);
@@ -75,24 +81,86 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    nextButtons.forEach(button => button.addEventListener("click", (event) => {
+   
+    nextBtnFirst?.addEventListener("click", (event) => {
         event.preventDefault();
         moveNext();
-    }));
+    });
+    nextBtnSec?.addEventListener("click", (event) => {
+        event.preventDefault();
+        moveNext();
+    });
+    nextBtnThird?.addEventListener("click", (event) => {
+        event.preventDefault();
+        moveNext();
+    });
+    nextBtnFourth?.addEventListener("click", (event) => {
+        event.preventDefault();
+        moveNext();
+    });
 
-    prevButtons.forEach(button => button.addEventListener("click", (event) => {
+    prevBtnSec?.addEventListener("click", (event) => {
         event.preventDefault();
         movePrev();
-    }));
+    });
+    prevBtnThird?.addEventListener("click", (event) => {
+        event.preventDefault();
+        movePrev();
+    });
+    prevBtnFourth?.addEventListener("click", (event) => {
+        event.preventDefault();
+        movePrev();
+    });
 
     submitBtn?.addEventListener("click", function () {
-        if (validatePage()) {
-            updateProgress();
-            setTimeout(function () {
-                alert("Your Form Successfully Signed Up");
-                location.reload();
-            }, 800);
-        }
+        if (!validatePage()) return;
+        updateProgress();
+        setTimeout(function () {
+            alert("Your Form Successfully Signed up");
+            location.reload();
+        }, 800);
+    });
+
+    // 🟢 Click on number bullets to go back
+  bullets.forEach((bullet, index) => {
+        bullet.addEventListener("click", function () {
+            if (index <= current) {
+                current = index;
+                showPage(current);
+            } else {
+                let allValid = true;
+                for (let i = 0; i < index; i++) {
+                    if (!validatePage(i)) {
+                        allValid = false;
+                        break;
+                    }
+                }
+                if (allValid) {
+                    current = index;
+                    showPage(current);
+                }
+            }
+        });
+    });
+            
+    document.querySelectorAll("select[required]").forEach((select) => {
+        select.addEventListener("change", function () {
+            let label = this.closest("label") || this.parentNode.querySelector("label");
+            let errorSpan = label ? label.querySelector(".error-message") : null;
+             if (this.value.trim()) {
+                errorSpan.textContent = ""; // Clear error if a valid option is selected
+            }
+        });
+    });
+
+    document.querySelectorAll("input[required]").forEach((input) => {
+        input.addEventListener("input", function () {
+            let label = this.closest("label") || this.parentNode.querySelector("label");
+            let errorSpan = label ? label.querySelector(".error-message") : null;
+            if (errorSpan) {
+                errorSpan.textContent = "";
+            }
+        });
     });
 });
 
